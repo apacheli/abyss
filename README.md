@@ -1,6 +1,11 @@
 # Abyss
 
-MessagePack codec.
+### About
+
+Simple [MessagePack](https://msgpack.org/index.html) codec written in TypeScript
+for Deno.
+
+### Example
 
 ```ts
 import {
@@ -20,3 +25,8 @@ const encoded = encode({
 
 const decoded = decode(encoded);
 ```
+
+### Needs Fixing
+
+- Decode `ext` and `fixext` formats, preferably without a structure.
+- Encode `BigInt` types without losing precision when decoding back.
